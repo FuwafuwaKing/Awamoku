@@ -1,0 +1,3 @@
+[submodule "awamoku_ws/src/ROS-TCP-EndPoint"]
+	path = awamoku_ws/src/ROS-TCP-EndPoint
+	url = https://github.com/Unity-Technologies/ROS-TCP-EndPoint.git

@@ -1,0 +1,4 @@
+This repository uses ROS-TCP-Endpoint as a Git submodule.
+
+ROS-TCP-Endpoint is Copyright Unity Technologies and is licensed under the
+Apache License, Version 2.0. Its complete license is included in the submodule.

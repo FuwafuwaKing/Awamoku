@@ -1,0 +1,8 @@
+# Unity serializes empty YAML values with a trailing space.
+*.asset -whitespace
+*.meta -whitespace
+*.prefab -whitespace
+*.unity -whitespace
+
+# Japanese design documents intentionally use Markdown hard line breaks.
+*.md -whitespace

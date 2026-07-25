@@ -1,0 +1,86 @@
+awamoku_phase0_contract:
+  ros__parameters:
+    game_duration_sec: 75.0
+    publish_hz: 5.0
+    initial_game_state: "IDLE"
+    initial_cloud_state: "DRIFT"
+
+cloud_game_manager:
+  ros__parameters:
+    game_duration_sec: 75.0
+    publish_hz: 5.0
+    comfort_score_per_sec: 1.0
+    comfort_bonus_duration_sec: 3.0
+    comfort_bonus_score: 3
+    cooldown_sec: 4.0
+    panic_hold_sec: 0.8
+    shy_distance_m: 1.2
+    comfort_min_distance_m: 0.0
+    comfort_max_distance_m: 2.0
+    return_arrival_distance_m: 0.18
+    far_call_min: 0.65
+    far_call_max: 0.85
+    near_comfort_min: 0.35
+    near_comfort_max: 0.55
+    near_panic_min: 0.70
+    voice_margin: 0.05
+    red_team_x: 2.5
+    red_team_y: 0.0
+    white_team_x: -2.5
+    white_team_y: 0.0
+    center_x: 0.0
+    center_y: 0.0
+
+voice_source_mux:
+  ros__parameters:
+    voice_source: "sim"
+    publish_hz: 10.0
+    input_timeout_sec: 1.0
+
+unity_voice_adapter:
+  ros__parameters:
+    publish_hz: 10.0
+
+cloud_motion_controller:
+  ros__parameters:
+    publish_hz: 15.0
+    linear_speed_mps: 0.16
+    panic_linear_speed_mps: 0.14
+    angular_speed_gain: 1.4
+    max_angular_speed_radps: 1.1
+    drift_tangent_weight: 0.55
+    restore_weight: 0.75
+    attract_weight: 0.80
+    wind_weight: 0.08
+    wind_period_sec: 4.0
+    lane_radius_m: 1.0
+    comfort_orbit_radius_m: 1.25
+    comfort_orbit_tangent_weight: 0.70
+    comfort_orbit_restore_weight: 1.00
+    red_team_x: 2.5
+    red_team_y: 0.0
+    white_team_x: -2.5
+    white_team_y: 0.0
+    center_x: 0.0
+    center_y: 0.0
+
+safety_guard:
+  ros__parameters:
+    publish_hz: 15.0
+    max_linear_x_mps: 0.16
+    min_linear_x_mps: 0.0
+    max_angular_z_radps: 1.0
+    desired_timeout_sec: 0.6
+    obstacle_stop_distance_m: 0.25
+    front_angle_deg: 30.0
+    field_radius_m: 3.0
+
+microphone_adapter:
+  ros__parameters:
+    publish_hz: 10.0
+    red_level: 0.0
+    white_level: 0.0
+
+effect_adapter:
+  ros__parameters:
+    log_events: true

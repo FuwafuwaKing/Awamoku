@@ -1,0 +1,52 @@
+# Unity generated files
+Library/
+Temp/
+Obj/
+Build/
+Builds/
+Logs/
+UserSettings/
+Assets/TutorialInfo/
+Assets/TutorialInfo.meta
+*.csproj
+*.sln
+*.slnx
+*.user
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+mono_crash.*.json
+mono_crash.*.blob
+mono_crash.*.mem
+
+# ROS 2 / colcon generated files
+awamoku_ws/build/
+awamoku_ws/install/
+awamoku_ws/log/
+log/
+
+# Python generated files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Editor/system files
+.vscode/
+.idea/
+.DS_Store
+.uloop/
+.codex/
+
+# Local reference material and scratch captures
+/ResumeUnity(04-06).md
+/参考用資料_Resume04-07/
+/参考用資料_RobotProg/
+/docs/local-captures/
+
+# Local presentation and design drafts
+/docs/slide-layout.md
+/docs/system-design.md
